@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* ------------ Header & nav bar ------------- */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 26, 65, 0.7), rgba(4, 9, 30, 0.7)), url(photos/08-night.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    margin-left: 20px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 100px;
+    font-family: 'Blade Runner Movie Font', sans-serif;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(167, 179, 180);
+    display: block;
+    margin: auto;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 50%;
+    margin-right: 120px;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1 {
+    font-size: 62px;
+
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 25px;
+}
+
+a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 22px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: rgb(20, 27, 53);
+        height: 30vh;
+        width: 200px;
+        top: 0;
+        right: -210px;
+        border-radius: 3%;
+        border-color: #ffff;
+        transition: 0.7s;
+
+    }
+
+    nav .fa {
+        display: block;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+/* ---------- Rooms (course) ----------- */
+
+.rooms {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p {
+    color: rgb(167, 179, 180);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 12px;
+}
+
+.room-box {
+
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.room-col {
+    flex-basis: 31%;
+    border-radius: 18px;
+    margin-bottom: 5%;
+    padding: 0 0;
+
+
+
+}
+
+button {
+    text-align: center;
+    font-weight: 200;
+    margin: 10px 0px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #8a8a8a;
+    
+    
+    
+
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.room-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.room-col img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width: 700px) {
+    .room-box {
+        flex-direction: column;
+        padding-bottom: 7rem;
+
+    }
+
+}
+
+
+
+
+/*----------------------- Booking ----------------------*/
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    border-radius: 2rem;
+}
+
+.book {
+    margin-top: 5%;
+    width: 100%;
+    height: 20vh;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.book .input {
+
+    padding: 20px 20px 50px 20px;
+    margin-left: 40px;
+    margin-bottom: 150px;
+    opacity: 90%;
+    color: #f7f7f7;
+    font-style: italic;
+    background-image: linear-gradient(rgba(16, 26, 65, 0.7), rgba(4, 9, 30, 0.7)), url(photos/blkbackground.png);
+
+}
+
+.book .search {
+
+    padding: 5px 5px 5px;
+    border-radius: 3rem;
+    background-image: linear-gradient(rgba(16, 26, 65, 0.7), rgba(4, 9, 30, 0.7)), url(photos/blkbackground.png);
+
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 90%;
+    
+
+
+
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.377);
+    outline: none;
+    background: transparent;
+    margin-top: 20px;
+    color: white;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-style: italic;
+    
+    
+}
+
+::placeholder {
+    color: white;
+
+}
+
+
+.book .search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 2.7rem;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-right: 1.2rem;
+    margin-left: 0.4rem;
+
+
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+@media(max-width: 700px) {
+    .input {
+        display: inline;
+
+
+
+    }
+
+    .book .search {
+        display: grid;
+        height: 50%;
+        width: 31%;
+        margin-top: 160px;
+        padding-bottom: 2.5rem;
+        padding-right: 0.1rem;
+        margin-left: 0.5rem;
+        padding-left: 0.1rem;
+
+    }
+
+    .book .search input {
+        padding-left: 0.1rem;
+        font-size: 15px;
+    }
+
+
+    @media(max-width: 500px) {
+        .book .search input {
+            margin-left: 1.3rem;
+            margin-bottom: 0.4rem;
+
+        }
+    }
+
+    @media(max-width: 700px) {
+        .book .search input {
+            margin-left: 1.3rem;
+            margin-bottom: 0.4rem;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/*---------------------- About ----------------------- */
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.about-box {
+
+    text-align: center;
+}
+
+.about-box img {
+    margin-top: 50px;
+    border-radius: 50%;
+    size-adjust: 10px;
+    max-width: 300px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+
+
+
+}
+
+@media(max-width: 700px) {
+    .about {
+        padding-top: 50px;
+    }
+}
+
+
+/* ---------------------- Footer --------------------- */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 60px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+@media(max-width: 700px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- "BOOKING" SUBPAGE -------------------*/
+
+.header-book {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 26, 65, 0.7), rgba(4, 9, 30, 0.7)), url(photos/01-night.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container-book-footer {
+    max-width: 1000px;
+    margin: auto;
+    max-height: 1vh;
+
+}
+
+/*----Footer----*/
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-2 {
+    background-color: #24262b;
+    padding: 6px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+@media(max-width: 700px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/*----Rooms----*/
+@media(max-width: 700px) {
+    .room-box {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- "ABOUT" SUBPAGE -------------------*/
+
+.header-about {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 26, 65, 0.7), rgba(4, 9, 30, 0.7)), url(photos/03-night.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}

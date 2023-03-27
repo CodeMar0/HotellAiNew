@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Ai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://fonts.cdnfonts.com/css/blade-runner-movie-font" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="">
+</head>
+
+<body>
+
+
+    <!-------------------------- Homepage (nav) --------------------------->
+
+<section class="header-book">
+    <nav>
+        <a href="index.html"><img src="logo/bonz.ai-logo-white-symbol.png"></a>
+        <article class="nav-links" id="navLinks">
+
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="booking.html">BOOKING</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                
+            </ul>
+        </article>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <article class="text-box">
+        <h1>Our rooms</h1>
+        <p>Select your way of living</p>
+        
+    </article>
+
+</section>
+
+
+
+
+<!-------------------------------  Rooms -------------------------------->
+
+ <section class="rooms">
+   
+    <article class="room-box">
+        <article class="room-col">
+            <img src="photos/03-day.jpg">
+            <button>Robo-Solo<br>100$</button>
+            <p>Lorem ipsum dolor sit amet. <br> Ut at rhoncus velit. Maecenas sagittis ligula nunc, sit amet facilisis felis semper et.</p>
+        </article>
+
+        <article class="room-col">
+            <img src="photos/02-day.jpg">
+            <button>Digi-Lux<br>200$</button>
+            <p>Lorem ipsum dolor sit amet. <br> Ut at rhoncus velit. Maecenas sagittis ligula nunc, sit amet facilisis felis semper et.</p>
+        </article>
+
+        <article class="room-col">
+            <img src="photos/09-day.jpg">
+            <button>Cyber-Scape<br>300$</button>
+            <p>Lorem ipsum dolor sit amet. <br> Ut at rhoncus velit. Maecenas sagittis ligula nunc, sit amet facilisis felis semper et.</p>
+        </article>
+    </article>
+
+ </section>
+
+
+
+
+ <!------------------------------ Booking --------------------------------->
+
+ <section class="book">
+    <article class="container flex">
+      <article class="input grid">
+        <article class="box">
+          <label>CHECK-IN:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </article>
+        <article class="box">
+          <label>CHECK-OUT:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </article>
+        <article class="box">
+          <label>ADULTS:</label> <br>
+          <input type="number" placeholder="0">
+        </article>
+        <article class="box">
+          <label>CHILDREN:</label> <br>
+          <input type="number" placeholder="0">
+        </article>
+      </article>
+      <article class="search">
+        <input type="submit" value="SEARCH">
+      </article>
+    </article>
+  </section>
+
+
+
+
+ 
+<script>
+
+
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-210px";
+}
+
+
+</script>
+</body>
+</html>
